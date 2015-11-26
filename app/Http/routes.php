@@ -14,9 +14,3 @@
 Route::get('/', 'StaticController@getHome');
 
 Route::post('brazzify', 'BrazzifyController@postBrazzify');
-
-Route::get('test', 'TestController@getBrazzify');
-Route::get('guzzle', 'TestController@getGuzzle');
-Route::get('blade', function () {
-    return view('home');
-});
